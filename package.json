@@ -1,6 +1,6 @@
 {
   "name": "@lolojs/htmlindexer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "scripts": {
     "cjs": "rollup -c rollup.config.js -i src/htmlIndexer.js -f cjs -o dist/output.cjs.js",
