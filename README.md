@@ -22,7 +22,7 @@ per chunk and the output is json based with format <b>{ term: 'test', freq: 1, i
 
 
 
-
+ 
 <code>
             var stream =indexer.getOutPutStream(2);
             
