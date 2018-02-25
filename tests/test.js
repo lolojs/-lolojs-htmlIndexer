@@ -1,11 +1,11 @@
 
 //Use of chai for assertion
-const should = require('chai').should();
+require('chai').should();
 
 const HtmlIndexer = new require('../dist/output.cjs.js').HtmlIndexer;
 
 
-const indexer=new HtmlIndexer();
+const indexer = new HtmlIndexer();
 
 describe("happy case", () => {
     //this is an edge case
@@ -13,11 +13,9 @@ describe("happy case", () => {
 
         indexer.IndexDocument("tests/test.html");
         indexer.on("indexFinished", () => {
-            indexer.tokens.size.should.equal(1);
-             console.log(indexer.tokens);
 
+            indexer.tokens.size.should.equal(1);
             for (var key of indexer.tokens.keys()) {
-                
                 key.should.equal("test");
                 done();
             }

@@ -1,5 +1,5 @@
 
-import {Readable} from 'stream';
+import { Readable } from 'stream';
 
 export class IndexerStream extends Readable {
     constructor(tokens, chunkSize) {
@@ -11,12 +11,10 @@ export class IndexerStream extends Readable {
     }
 
     _read() {
-
         if (this.counter > this.size) {
             this.push(null);
             return;
         }
-
         let endIndex = this.counter + this.chunkSize;
 
         let termsToPush = [];
