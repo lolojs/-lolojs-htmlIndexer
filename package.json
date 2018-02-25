@@ -1,5 +1,5 @@
 {
-  "name": "@egyptiannoder/htmlindexer",
+  "name": "@lolojs/htmlindexer",
   "version": "1.0.0",
   "description": "",
   "main": "dist/output.cjs.js",
